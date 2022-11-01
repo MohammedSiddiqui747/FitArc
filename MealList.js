@@ -6,7 +6,7 @@ export default function MealList({ mealData, addUserMeal }) {
   const nutrients = mealData.nutrients;
 
     return (
-      <main>
+      <main className="meal-disp">
         <section className="nutrients">
           <h1>Your Macros</h1>
           <ul>

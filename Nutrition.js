@@ -74,14 +74,14 @@ export default function Nutrition() {
   return (
     <div>
     <div className="btn-submit">
-      <button onClick={getMealData}>Get Today's Meal Plan</button>
+      <button className="btn-check" onClick={getMealData}>Get Today's Meal Plan</button>
     </div>
       <div className="nutrition">
         {mealData && <MealList mealData={mealData} addUserMeal={addUserMeal} />}
         {mealData && <AddList mealData={mealData} userAddedMeals={userAddedMeals} ref={addListRef} test={test}/>}
       </div>
     <div className="btn-submit">
-      <button onClick={getMealData}>Request Different Meals</button>
+      <button className="btn-check" onClick={getMealData}>Request Different Meals</button>
     </div>
       
 

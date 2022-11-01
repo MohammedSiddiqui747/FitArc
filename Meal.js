@@ -29,9 +29,9 @@ export default function Meal({meal, addUserMeal}) {
 
 
   return ( 
-  <article>
+  <article className="meal-card">
     <h1>{meal.title}</h1>
-    <img src={imageUrl} alt="recipe" />
+    <img className="meal-img" src={imageUrl} alt="recipe" />
     <ul className='instructions'>
       <li>Preparation time: {meal.readyInMinutes} minutes</li>
       <li>Number of servings: {meal.servings} </li>
@@ -39,8 +39,8 @@ export default function Meal({meal, addUserMeal}) {
       <li>Fat: {mealFat}g</li>
     </ul>
 
-    <a href={meal.sourceUrl} target="_blank" rel="noopener noreferrer">Go to Recipe</a>
-    <button onClick={()=>{addUserMeal(meal)}
+    <a className="link-text" href={meal.sourceUrl} target="_blank" rel="noopener noreferrer">Go to Recipe</a>
+    <button className="btn-check" onClick={()=>{addUserMeal(meal)}
                     }>Add to Meal MealsEaten</button>  
 
   </article>

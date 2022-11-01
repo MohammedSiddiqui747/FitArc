@@ -1,25 +1,21 @@
-*{
-    background-color: #F1EFEF;
-}
-
 .nutrition{
     font-size: medium;
 
 }
 
-main {
+.meal-disp {
     font-size: small;
     flex-direction: column;
     width: 50rem;
     float: left;
 }
 
-img {
+.meal-img {
     width: 100%;
     margin-bottom: 1rem;
   }
 
-  article {
+  .meal-card {
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -29,7 +25,7 @@ img {
     
   }
 
-  button {
+  .btn-check {
     padding: 0.5rem 1rem;
     background-color: #1bdd55;
     color: #000000;
@@ -37,7 +33,7 @@ img {
     font-size: 1rem;
   }
 
-  a {
+  .link-text {
     text-decoration: none;
     background-color: #1bdd55;
     color: #000000;
