@@ -37,7 +37,7 @@ class AddList extends React.Component {
         <div className="mealInfo">
             {this.userAddedMeals.map((meal) => {
               return <li key={meal.title}>Name: {meal.title}: <br/>
-              Cal:{meal.calories}, <br/>Fat: {meal.fat}</li>
+              Cal:{meal.calories}kcal, <br/>Fat: {meal.fat}g</li>
             })}
         </div>
     )
